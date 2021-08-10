@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>I-Learn</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Trusted and partner to professional training</title>
+		<!-- Favicons -->
+    <%= favicon_link_tag asset_path('favicon-ilearn.png'), rel: 'icon' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <style>
+    .banner-section {
+      position: relative;
+      background: url(<%= asset_path 'bg.jpg' %>);
+      background-position: 50% 0;
+      background-size: cover;
+      background-repeat: no-repeat; 
+      z-index: 1;
+            }
+    </style>    
   </head>
 
   <body>
   <%= render 'layouts/nav' %>
-  <div class="container">
+ 
+      <%#= render 'layouts/messages' %>
     <%= yield %>
-  </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

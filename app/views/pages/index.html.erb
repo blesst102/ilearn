@@ -1,68 +1,271 @@
-<div class="container py-5" id="custom-cards">
-  <h2 class="pb-2 border-bottom">Featured Courses</h2>
+<!-- Banner -->
+			<section class="banner-section">
+				<div class="container">
+					<div class="banner-content text-center">
+						<div class="banner-heading">
+							<h2>ONLINE COURSES TO LEARN</h2>
+							<p>Own your future learning new skills online</p>
+						</div>
+						<div class="banner-forms">
+							<form class="banner-form" action="https://mentoring-html.dreamguystech.com/template-1/search.html">
+								<div class="input-group-form form-style form-br col-md-3 col-12"> <i class="fas fa-map-marker-alt text-warning"></i>
+									<input class="input-style-form" type="text" placeholder="Search Location" name="going">
+								</div>
+								<div class="input-group-form form-style col-md-6 col-12"> 
+									<input class="input-style-form" type="text" placeholder="Search School, Online eductional centers, etc" name="going">
+								</div>
+								<button class="btn button-form col-md-3 col-12" type="submit">Search Now</button>
+							</form>
+						</div>
+					</div>
+					<div class="banner-footer">
+						<div class="banner-details">
+							<div>
+								<div class="banner-card d-flex align-items-center">
+									<div class="banner-count">
+										<h2>10</h2>
+									</div>
+									<div class="banner-contents">
+										<h2>Global Locations</h2>
+										<a href="#">See all Locations <i class="fas fa-caret-right right-nav-white"></i></a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="banner-card d-flex align-items-center">
+									<div class="banner-count">
+										<h2>54</h2>
+									</div>
+									<div class="banner-contents">
+										<h2>Programs Courses</h2>
+										<a href="#">See all Courses <i class="fas fa-caret-right right-nav-white"></i></a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="banner-card d-flex align-items-center">
+									<div class="banner-count">
+										<h2>7M</h2>
+									</div>
+									<div class="banner-contents">
+										<h2>Students Globally</h2>
+										<a href="#">Contact us <i class="fas fa-caret-right right-nav-white"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Banner -->
+      <!-- All Courses -->
+			<section class="allcourse-section bg-grey">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-lg-4 d-flex flex-wrap">
+							<div class="allcourse-card">
+								<div class="allcourse-img">
+                <%= image_tag(image_path('c3.jpg'), class: 'img-fluid') %>
+								</div>
+								<div class="allcourse-content">
+									<h4 class="mb-3">Design</h4>
+									<p>Over <span class="text-warning">2,500</span> Courses</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 d-flex flex-wrap">
+							<div class="allcourse-card">
+								<div class="allcourse-img">
+                <%= image_tag(image_path('c1.jpg'), class: 'img-fluid') %>
+								</div>
+								<div class="allcourse-content">
+									<h4 class="mb-3">Digital Marketer</h4>
+									<p>Over <span class="text-warning">5,500</span> Courses</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 d-flex flex-wrap">
+							<div class="allcourse-card">
+								<div class="allcourse-img">
+                <%= image_tag(image_path('c2.jpg'), class: 'img-fluid') %>
+								</div>
+								<div class="allcourse-content">
+									<h4 class="mb-3">Photography</h4>
+									<p>Over <span class="text-warning">2,540</span> Courses</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 d-flex flex-wrap">
+							<div class="allcourse-card">
+								<div class="allcourse-img">
+                <%= image_tag(image_path('c7.jpg'), class: 'img-fluid') %>
+								</div>
+								<div class="allcourse-content">
+									<h4 class="mb-3">IT Security</h4>
+									<p>Over <span class="text-warning">2,750</span> Courses</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 d-flex flex-wrap">
+							<div class="allcourse-card">
+								<div class="allcourse-img">
+                <%= image_tag(image_path('c4.jpg'), class: 'img-fluid') %>
+								</div>
+								<div class="allcourse-content">
+									<h4 class="mb-3">Research</h4>
+									<p>Over <span class="text-warning">2,120</span> Courses</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 d-flex flex-wrap">
+							<div class="allcourse-card">
+								<div class="allcourse-img">
+                <%= image_tag(image_path('c5.jpg'), class: 'img-fluid') %>
+								</div>
+								<div class="allcourse-content">
+									<h4 class="mb-3">Finance</h4>
+									<p>Over <span class="text-warning">2,840</span> Courses</p>
+								</div>
+							</div>
+						</div>
+						<div class="section-btn m-auto">
+							<button class="btn btn-course">View all Courses <i class="fas fa-caret-right right-nav-white"></i></button>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  <div class="row row-cols-3 align-items-stretch py-5">
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Database, Postgresql</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Tema</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>3d</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <!-- Popular Courses -->
+			
+	  <section class="popular-course-section">
+	  <div class="container">
+		  <div class="section-heading d-flex align-items-center">
+			  <div class="heading-content">
+				  <h2><span class="text-weight">Popular</span> Courses <span class="header-right"></span></h2>
+				  <p>Browse through our elite courses.</p>
+			  </div> 
+		  </div>
+		  <div class="row">
+		  <% @courses.each do |course| %>
+			  <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-wrap">
+				  <div class="popular-course">
+					  <div class="courses-head">
+						  <div class="courses-img-main">
+											<%= image_tag(image_path('c8.jpg'), class: 'img-fluid w-100') %>
+						  </div>
+						  <div class="courses-aut-img">
+											<%= image_tag(image_path('user.png')) %>
+						  </div>
+					  </div>
+					  <div class="courses-body">
+						  <div class="courses-ratings">
+							  <ul class="mb-1">
+								  <li>	<i class="fas fa-star checked"></i> 
+								  </li>
+								  <li>	<i class="fas fa-star checked"></i> 
+								  </li>
+								  <li>	<i class="fas fa-star checked"></i> 
+								  </li>
+								  <li>	<i class="fas fa-star checked"></i> 
+								  </li>
+								  <li>	<i class="fas fa-star not-checked"></i> 
+								  </li>
+							  </ul>
+							  <p class="mb-1"><%= course.title %></p>
+							  <h4 class="mb-0"><%= course.created_at.strftime('%d-%b-%Y') %></h4>
+						  </div>
+					  </div>
+					  <div class="courses-border"></div>
+					  <div class="courses-footer d-flex align-items-center">
+						  <div class="courses-count">
+							  <ul class="mb-0">
+								  <li><i class="fas fa-user-graduate mr-1"></i> 85</li>
+								  <li><i class="far fa-file-alt mr-1"></i>5</li>
+							  </ul>
+						  </div>
+						  <div class="courses-amt ml-auto">
+							  <h3 class="mb-0">$200</h3>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+			  <% end %>
+			  <div class="section-btn m-auto">
+			     <%= link_to "View all", courses_path, class: 'btn btn-course' %>
+			  </div>
+		  </div>
+	  </div>
+  </section>
 
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Backend Development</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Accra</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>4d</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Html and CSS</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Accra</small>
-            </li>
-            <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>5d</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+						
+			<!-- /Popular Courses -->
+			
+			<!-- Instructor -->
+			<section class="instructor-section bg-grey">
+				<div class="container">
+					<div class="section-heading d-flex align-items-center">
+						<div class="heading-content">
+							<h2><span class="text-weight">Featured </span> Instructor <span class="header-right"></span></h2>
+							<p>They are highly qualified and trained in their areas</p>
+						</div> 
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<div class="instructor-card">
+								<div class="instructor-profile align-items-center">
+									<div class="instructor-img">
+                  <%= image_tag(image_path('user8.jpg')) %>
+									</div>
+									<div class="instructor-desc">
+										<h3 class="mb-0 text-warning">David Lee</h3>
+										<span class="text-primary">Web Developer</span>
+										<p>I've been involved in teaching and education for more than ten years. Always eager to learn, I invested a lot of my time in learning…</p>
+									</div>
+								</div>
+								<div class="instructor-content d-flex">
+									<div class="ic-left">
+										<ul class="mb-0">
+											<li><i class="fas fa-user-graduate mr-1"></i> 200</li>
+											<li><i class="far fa-file-alt mr-1"></i>2</li>
+										</ul>
+									</div>
+									<div class="ic-right ml-auto">
+										<a href="#">View Profile <i class="fas fa-caret-right right-nav"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12">
+							<div class="instructor-card">
+								<div class="instructor-profile align-items-center">
+									<div class="instructor-img">
+                  <%= image_tag(image_path('user7.jpg')) %>
+									</div>
+									<div class="instructor-desc">
+										<h3 class="mb-0 text-warning">Daziy Millar</h3>
+										<span class="text-primary">PHP Expert</span>
+										<p>I've spend the past three years as a lead instructor at many types of coding schools. As a self taught developer, I've experienced the...</p>
+									</div>
+								</div>
+								<div class="instructor-content d-flex">
+									<div class="ic-left">
+										<ul class="mb-0">
+											<li><i class="fas fa-user-graduate mr-1"></i> 200</li>
+											<li><i class="far fa-file-alt mr-1"></i>2</li>
+										</ul>
+									</div>
+									<div class="ic-right ml-auto">
+										<a href="#">View Profile <i class="fas fa-caret-right right-nav"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-btn m-auto">
+							<button class="btn btn-course">Become an Instructor <i class="fas fa-caret-right right-nav-white"></i></button>
+						</div>
+					</div>
+				</div>
+			</section>
+      

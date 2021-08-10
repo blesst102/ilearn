@@ -1,0 +1,133 @@
+<div class="content" style="transform: none; min-height: 138.712px;">
+				<div class="container-fluid" style="transform: none;">
+					<div class="row" style="transform: none;">
+					
+						<!-- Profile Sidebar -->
+						<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+
+							<!-- Sidebar -->
+							
+							<!-- /Sidebar -->
+
+						<div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; top: 0px; left: 30px;"><div class="profile-sidebar">
+								<div class="user-widget">
+									<div class="pro-avatar">TB</div>
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="user-info-cont">
+										<h4 class="usr-name">Tademe Bless</h4>
+										<p class="mentor-type">Software Engineer (Ghana)</p>
+									</div>
+								</div>
+								<div class="progress-bar-custom">
+									<h6>Complete your profiles &gt;</h6>
+									<div class="pro-progress">
+										<div class="tooltip-toggle" tabindex="0"></div>
+										<div class="tooltip">80%</div>
+									</div>
+								</div>
+								<div class="custom-sidebar-nav">
+									<ul>
+										<li><a href="dashboard.html"><i class="fas fa-home"></i>Dashboard <span><i class="fas fa-chevron-right"></i></span></a></li>
+										<li><a href="bookings.html"><i class="fas fa-clock"></i>Bookings <span><i class="fas fa-chevron-right"></i></span></a></li>
+										<li><a href="schedule-timings.html"><i class="fas fa-hourglass-start"></i>Schedule Timings <span><i class="fas fa-chevron-right"></i></span></a></li>
+										<li><a href="chat.html"><i class="fas fa-comments"></i>Messages <span><i class="fas fa-chevron-right"></i></span></a></li>
+										<li><a href="blog.html"><i class="fab fa-blogger-b"></i>Blog <span><i class="fas fa-chevron-right"></i></span></a></li>
+										<li><a href="profile.html"><i class="fas fa-user-cog"></i>Profile <span><i class="fas fa-chevron-right"></i></span></a></li>
+										<li><a href="login.html"><i class="fas fa-sign-out-alt"></i>Logout <span><i class="fas fa-chevron-right"></i></span></a></li>
+									</ul>
+								</div>
+							</div><div class="resize-sensor" style="position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 370px; height: 614px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div></div>
+						<!-- /Profile Sidebar -->
+						
+						<div class="col-md-7 col-lg-8 col-xl-9">
+							<div class="card">
+								<div class="card-body">
+									
+									<!-- Profile Settings Form -->
+                  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+									<form>
+										<div class="row form-row">
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="change-avatar">
+														<div class="profile-img">
+                            <%= image_tag(image_path('user.svg')) %>
+														</div>
+														<div class="upload-img">
+															<div class="change-photo-btn">
+																<span><i class="fa fa-upload"></i> Upload Photo</span>
+																<input type="file" class="upload">
+															</div>
+															<small class="form-text text-muted">Allowed JPG, GIF or PNG. Max size of 2MB</small>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+                          <%= f.input :email, required: false, autofocus: true, class: 'form-control', id: 'email'%>
+												
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<%= f.input :password_confirmation, required: false, class: 'form-control', id: 'password-confirm' %>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group">
+                        <%= f.input :current_password, required: false, class: 'form-control', id: 'password-confirm' %>
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label>City</label>
+													<input type="text" class="form-control" value="Accra">
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label>Region</label>
+													<input type="text" class="form-control" value="Greater Accra">
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label>GPS Location</label>
+													<input type="text" class="form-control" value="13420">
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label>Country</label>
+													<input type="text" class="form-control" value="Ghana">
+												</div>
+											</div>
+										</div>
+										<div class="submit-section">
+                    <%= f.button :submit, "Save Changes", class: 'btn btn-primary submit-btn' %>
+                    <h3>Cancel my account</h3>
+
+<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+										</div>
+									</form>
+                  <% end %>
+									<!-- /Profile Settings Form -->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+

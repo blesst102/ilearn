@@ -1,0 +1,60 @@
+<section class="popular-course-section">
+				<div class="container">
+					<div class="section-heading d-flex align-items-center">
+						<div class="heading-content">
+							<h2><span class="text-weight">Popular</span> Courses <span class="header-right"></span></h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div> 
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-wrap">
+							<div class="popular-course">
+								<div class="courses-head">
+									<div class="courses-img-main">
+                                                      <%= image_tag(image_path('c8.jpg'), class: 'img-fluid w-100') %>
+									</div>
+									<div class="courses-aut-img">
+                                                      <%= image_tag(image_path('user.png')) %>
+									</div>
+								</div>
+								<div class="courses-body">
+									<div class="courses-ratings">
+										<ul class="mb-1">
+											<li>	<i class="fas fa-star checked"></i> 
+											</li>
+											<li>	<i class="fas fa-star checked"></i> 
+											</li>
+											<li>	<i class="fas fa-star checked"></i> 
+											</li>
+											<li>	<i class="fas fa-star checked"></i> 
+											</li>
+											<li>	<i class="fas fa-star not-checked"></i> 
+											</li>
+										</ul>
+										<p class="mb-1"><%= course.title %></p>
+										<h4 class="mb-0"><%= course.created_at.strftime('%d-%b-%Y') %></h4>
+									</div>
+								</div>
+								<div class="courses-border"></div>
+								<div class="courses-footer d-flex align-items-center">
+									<div class="courses-count">
+										<ul class="mb-0">
+											<li><i class="fas fa-user-graduate mr-1"></i> 85</li>
+											<li><i class="far fa-file-alt mr-1"></i>5</li>
+										</ul>
+									</div>
+									<div class="courses-amt ml-auto">
+										<h3 class="mb-0">$200</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="section-btn m-auto">
+							<button class="btn btn-course">View all <i class="fas fa-caret-right right-nav-white"></i></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
